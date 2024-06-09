@@ -6,17 +6,17 @@
 
 {% block content %}
 <section>
-        <h1>Posts</h1>
-        {% for post in posts %}
+        <h1>Post</h1>
+        
                 <article class="post">
                     <h2>
-                       <a href="{% url 'posts:page' slug=post.slug %}"> {{ post.title }} </a>
+                      {{ post.title }}
                     </h2>
                     <p>{{ post.date }}</p>
                     <p>{{ post.body }}</p>
                 </article>
 
-        {% endfor %}
+        
 
 
     </section>
